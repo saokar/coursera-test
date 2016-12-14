@@ -1,0 +1,32 @@
+<div class="container">
+  <h2 id="menu-categories-title" class="text-center">My Preferences</h2>
+
+  <hr/>
+  <h3 id="menu-categories-title" class="text-left">
+    First Name : {{ prefCtrl.pref.firstname}}
+  </h3>
+
+  <h3 id="menu-categories-title" class="text-left">
+    Last Name : {{ prefCtrl.pref.lastname}}
+  </h3>
+
+  <h3 id="menu-categories-title" class="text-left">
+    Email : {{ prefCtrl.pref.email}}
+  </h3>
+
+  <h3 id="menu-categories-title" class="text-left">
+    Phone : {{ prefCtrl.pref.phone}}
+  </h3>
+
+  <hr/>
+  <h3 id="menu-categories-title" class="text-left">
+    Your Favourite Dish
+    <div align="left">Title : {{ prefCtrl.pref.menuItem.$$state.value.name}} </div>
+    <div align="left">Description : {{ prefCtrl.pref.menuItem.$$state.value.description}} </div>
+    <div align="left">
+     <img class="img-responsive" width="250" height="150" ng-src="https://infinite-savannah-29846.herokuapp.com/images/{{prefCtrl.pref.menunumber}}.jpg" alt="{{prefCtrl.pref.menuItem.$$state.value.name}}">
+     </div>
+  </h3>
+  <hr/>
+
+</div>
